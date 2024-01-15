@@ -1,0 +1,12 @@
+Generic Makefile creation with mutiple source directories
+Ref : Exercise 2 zip file in training link. 
+Exercise 2 zip file contains source structure for which makefile needs to be created.
+- Makefile needs to be implemented for following source structure
+1) 2 source file directories containing common modules (with .c and .h files)
+     - Makefile should not change when new files are added in the directories. 
+2) Source file containing main function outside common modules
+- Makefile should control 1 MACRO definition (Enable / Disable "DECORATE" macro and see the diff in results)
+- Makefile should generate output Executable in "out" directory and object files in "build" directory
+- Makefile should have clean function to delete build output and temporary files
+- Add samplDivide.c in "commonMod2" directory for divison operation similar to sampleMultiply.c, also change app to call functino from sampleDivide.c
+  (Makefile should not be changed for adding compilation / clean support sampleDivide.c)

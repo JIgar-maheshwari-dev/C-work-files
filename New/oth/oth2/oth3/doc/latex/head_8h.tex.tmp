@@ -1,0 +1,34 @@
+\hypertarget{head_8h}{}\doxysection{head.\+h File Reference}
+\label{head_8h}\index{head.h@{head.h}}
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{head_8h_aa99823a0fc8313c9c32541ce768fb801}{add}} (int a, int b)
+\item 
+int \mbox{\hyperlink{head_8h_aafe27965474c250fa0d582779f130d57}{sub}} (int a, int b)
+\item 
+int \mbox{\hyperlink{head_8h_ac5f3307998363a27afa525d78b35ea91}{mul}} (int a, int b)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{head_8h_aa99823a0fc8313c9c32541ce768fb801}\label{head_8h_aa99823a0fc8313c9c32541ce768fb801}} 
+\index{head.h@{head.h}!add@{add}}
+\index{add@{add}!head.h@{head.h}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily int add (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{head_8h_ac5f3307998363a27afa525d78b35ea91}\label{head_8h_ac5f3307998363a27afa525d78b35ea91}} 
+\index{head.h@{head.h}!mul@{mul}}
+\index{mul@{mul}!head.h@{head.h}}
+\doxysubsubsection{\texorpdfstring{mul()}{mul()}}
+{\footnotesize\ttfamily int mul (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{head_8h_aafe27965474c250fa0d582779f130d57}\label{head_8h_aafe27965474c250fa0d582779f130d57}} 
+\index{head.h@{head.h}!sub@{sub}}
+\index{sub@{sub}!head.h@{head.h}}
+\doxysubsubsection{\texorpdfstring{sub()}{sub()}}
+{\footnotesize\ttfamily int sub (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
