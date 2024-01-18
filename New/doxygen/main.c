@@ -9,7 +9,7 @@
 
 /**
  * Here down my main function starts
- * this is funny function 
+ * this is funny function
  * @param [in] nothing
  * @param [out] nothing
  */
