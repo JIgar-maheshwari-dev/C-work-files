@@ -1,0 +1,18 @@
+CC=gcc
+S_DIR=./source/
+E_DIR=./out/
+O_DIR=./obj/
+
+C_FILES=$(wildcard $(S_DIR)*.c)
+EX_OBJ=$(patsubst %.c,%.o,$(C_FILES))
+
+OBJ!=cd ./obj/ ; ls
+
+$(E_DIR)main:$(OBJ)
+	$(CC) -o $@ $?
+
+$(OBJ):$(C_FILES)
+	$(CC) -c $?
+	
+
+
