@@ -28,9 +28,10 @@ clear:
 	rm main *.o
 
 print:
-	$(info $(MY), this is just my)
-	$(info $(filter %.c,$(MY)), this printing .c using filter)
-	@echo `pwd`
+#	$(info $(MY), this is just my)
+#	$(info $(filter %.c,$(MY)), this printing .c using filter)
+#	@echo `pwd`
+	$(error "this is erro")
 
 hii::
 	$(info this is hiii 1)
@@ -40,3 +41,6 @@ hii::
 
 mymake:
 	$(info $(J))
+
+
+
