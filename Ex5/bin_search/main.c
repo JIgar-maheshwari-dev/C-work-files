@@ -12,7 +12,6 @@ int main() {
 	printf( "length is = %d\n",j  );
 	printf(" %d is found in array at index %d\n",p,i);
 	printf("-1 means not founf \n\n");
-
                                 
 	return 0;
 }
