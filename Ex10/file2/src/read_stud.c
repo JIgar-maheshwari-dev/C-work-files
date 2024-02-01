@@ -4,7 +4,7 @@
 
 void read(){
 	
-	fp2=fopen("./files/write.txt","r");
+	fp2=fopen("./files/read.txt","r");
 	
 	char name[50];
 	int age,roll;

@@ -5,7 +5,13 @@ FILE *fp1,*fp2;
 
 int main() {
 	
-	write();
+//	write();
+	read();
+	
+	printf("\n\n\n");
+	
+	replace();
+
 	read();
 
 	return 0;
