@@ -2,11 +2,11 @@
 #include<stdlib.h>
 #include"head.h"
 
-void r_w_putc(char *n,FILE *f) {
-	
 
-	f=fopen(n,"w");
-  
+/* THIS FILE IS FOR PRINTING DATA TO A FILE */
+
+void r_w_putc() {
+	
 	if(fp==NULL){
 		printf("Error while opening file\n");
 		exit(1);
@@ -16,7 +16,7 @@ void r_w_putc(char *n,FILE *f) {
         while((a=getchar())!=EOF)
 		putc(a,fp);
  
-	printf("\nENDING OF DATA PRINTING\n");
+	printf("\n *** ** * ENDING OF DATA PRINTING * ** *** \n\n");
 	fclose(fp);
 
 }

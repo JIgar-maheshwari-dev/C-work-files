@@ -1,13 +1,13 @@
 #include<stdio.h>
 #include"head.h"
 
-int main() {
+FILE *fp1,*fp2;
 
-	r_w_putc(name,fp);
+int main() {
+	
+	write();
+	read();
 
 	return 0;
 }
-
-
-
 
