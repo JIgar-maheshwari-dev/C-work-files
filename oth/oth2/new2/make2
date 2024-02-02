@@ -1,0 +1,25 @@
+SHELL = /bin/bash
+
+PATH= $(PWD)/src
+
+HDR= -I $(PWD)/hed
+CC= gcc
+OUT_D=$(PWD)/out
+OBJ_D=$(PWD)/obj
+
+SRC=$(wildcard $(PATH)/*.c)
+
+OBJ=$(patsubst $(PATH)/%.c,$(OBJ_D)/%.o,$(SRC))
+
+
+main:$(OBJ)
+	$(CC) -o $@ $^
+	mv $@ $(OUT_D)
+
+$(OBJ):$(SRC)
+	$(CC) -c $? $(HDR)
+	mv *.o $(OBJ_D)
+
+print:
+	$(info $(SRC))
+	$(info $(OBJ))
