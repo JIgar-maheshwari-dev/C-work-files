@@ -3,8 +3,7 @@
 
 int main() {
 
-	func();
-
+	send1();
 
 	return 0;
 }
