@@ -5,6 +5,7 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 
+
 #define PORT 8080
 #define BUFFER_SIZE 1024
 
@@ -32,7 +33,7 @@ void send1() {
     serv_addr.sin_port = htons(PORT);
 
     // Convert IPv4 and IPv6 addresses from text to binary form
-    if(inet_pton(AF_INET, "127.0.0.1", &serv_addr.sin_addr)<=0) {
+    if(inet_pton(AF_INET, "192.168.6.142", &serv_addr.sin_addr)<=0) {
         perror("Invalid address/ Address not supported");
         exit(EXIT_FAILURE);
     }
