@@ -1,46 +1,20 @@
 #include"head.h"
 
 
-void protocol_selected(GtkComboBox *widget, gpointer data) {
-    gchar *selected_protocol = NULL;
-
-    // Get the active item index
-    int active_index = gtk_combo_box_get_active(widget);
-
-    if (active_index >= 0) {
-        // Get the model associated with the combo box
-        GtkTreeModel *model = gtk_combo_box_get_model(widget);
-
-        // Get the active item from the model
-        GtkTreeIter iter;
-        if (gtk_combo_box_get_active_iter(widget, &iter)) {
-            // Get the value of the first column (in this case, the protocol name)
-            gtk_tree_model_get(model, &iter, 0, &selected_protocol, -1);
-            g_print("Selected Protocol: %s\n", selected_protocol);
-        }
-    }
-
-    g_free(selected_protocol);
-}
-
-
-
-void start_page(int argc,char* argv[]){
-
+void start_page(int argc, char* argv[]) {
+    
     GtkWidget* window;
     GtkWidget* notebook;
+    GtkWidget* protocol_page;
     GtkWidget* send_page;
     GtkWidget* receive_page;
     GtkWidget* send_button;
     GtkWidget* receive_button;
     GtkWidget* send_entry;
     GtkWidget* receive_folder_entry;
-
-    GtkWidget* protocol_page;
     GtkWidget* protocol_combo_box;
     GtkListStore *protocol_store;
     GtkTreeIter iter;
-
 
     gtk_init(&argc, &argv);
 
@@ -51,10 +25,9 @@ void start_page(int argc,char* argv[]){
 
     notebook = gtk_notebook_new();
 
-
-    protocol_page = gtk_box_new(GTK_ORIENTATION_VERTICAL, 5); 
+    // Create the "Protocol" page
+    protocol_page = gtk_box_new(GTK_ORIENTATION_VERTICAL, 5);
     gtk_notebook_append_page(GTK_NOTEBOOK(notebook), protocol_page, gtk_label_new("Select Protocol"));
-
 
     protocol_store = gtk_list_store_new(1, G_TYPE_STRING);
     gtk_list_store_append(protocol_store, &iter);
@@ -73,10 +46,8 @@ void start_page(int argc,char* argv[]){
     renderer = gtk_cell_renderer_text_new();
     gtk_cell_layout_pack_start(GTK_CELL_LAYOUT(protocol_combo_box), renderer, TRUE);
     gtk_cell_layout_set_attributes(GTK_CELL_LAYOUT(protocol_combo_box), renderer, "text", 0, NULL);
-
-
-
-
+    gtk_box_pack_start(GTK_BOX(protocol_page), protocol_combo_box, FALSE, FALSE, 0);
+    g_signal_connect(protocol_combo_box, "changed", G_CALLBACK(protocol_selected), NULL);
 
     // Create the "Send" page
     send_page = gtk_box_new(GTK_ORIENTATION_VERTICAL, 5);
@@ -103,4 +74,6 @@ void start_page(int argc,char* argv[]){
     gtk_widget_show_all(window);
 
     gtk_main();
+
 }
+

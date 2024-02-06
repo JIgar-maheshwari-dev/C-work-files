@@ -5,6 +5,9 @@ void start_page();
 
 void send_button_func(GtkWidget* widget, gpointer data);
 void rec_button_func(GtkWidget* widget, gpointer data);
+void protocol_selected(GtkComboBox *widget, gpointer data);
+
+void NFS_func();
 
 extern GtkWidget* window;
 extern GtkWidget* notebook;
