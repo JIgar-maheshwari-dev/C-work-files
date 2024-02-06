@@ -2,8 +2,10 @@
 
 void menu(){
         pl();
-        printf("                                       WELCOME TO LIBRARY OF JIGAR MAHESHWARI                    \n");
-        printf("                                   Enter 1. add book 2. print details of all book              \n");
+        printf("                                       WELCOME TO LIBRARY OF JIGAR MAHESHWARI                    \n\n");
+        printf("                          1. Enter new book                          \n");
+        printf("                          2. Print details of book                          \n");
+        printf("                          3. Exit                          \n");
 	int a;
 	scanf("%d",&a);
 	
@@ -16,5 +18,8 @@ void menu(){
 		case 2:
 			print_book();
 			break;
+
+		case 3:
+            exit(0);
 	}
 }

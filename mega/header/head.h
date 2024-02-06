@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<string.h>
+#include<stdlib.h>
 
 void pl();
 void menu();
@@ -9,4 +10,3 @@ void add_book();
 
 
 
-#define filepath "/home/jigar/Downloads/training/jigar_maheshwari_idp/mega/book_files/"
