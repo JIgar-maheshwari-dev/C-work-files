@@ -42,3 +42,6 @@ print:
 create_dirs:
 	@mkdir -p $(CURDIR)/$(SRC_DIR) $(CURDIR)/$(OBJ_DIR) $(CURDIR)/$(OUT_DIR)
 
+
+cb:
+	rm book_files/book_records.txt

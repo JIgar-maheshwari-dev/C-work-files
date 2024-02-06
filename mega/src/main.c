@@ -16,7 +16,6 @@
 
 int main() {
 	
-	pl();
 	menu();
 
 	return 0;
