@@ -1,48 +1,56 @@
 #include"head.h"
 #include"struct.h"
 
-
 void add_book(){
 
-	FILE* fp,*b_count;
+	
+	FILE *fp, *c,*sys;
 	static int count;
-  
 
-	fp=fopen("/home/jigar/intenship/C-work-files/mega/book_files/book_records.txt","a");
-    
-    b_count=fopen("/home/jigar/intenship/C-work-files/mega/book_files/count.txt","r");
-    count=getw(b_count);
-    fclose(b_count);
+	fp=fopen("../book_files/book_records.txt","a");
+
+
+	c=fopen("../book_files/count.txt","r");
+	count=getw(c);
+	fclose(c);
 
 	book temp;
-	fprintf(fp,"------------------------------------------------\n\n");
-	fprintf(fp," Book No. %d\n",++count);
-    
-    b_count=fopen("/home/jigar/intenship/C-work-files/mega/book_files/count.txt","w");
-    putw(count,b_count);
-    fclose(b_count);
+	
+	fprintf(fp,"------------------------------------------------\n");
+	fprintf(fp," Book no  : %d \n",++count);
+
+	c=fopen("../book_files/count.txt","w");
+	putw(count,c);
+	fclose(c);
 
 	printf("Enter the name of book : ");
 	scanf(" %[^\n]s ",temp.name);
-	printf("%s\n",temp.name);
 	
-	printf("Enter prise of book : ");
-	scanf("%d",&temp.prise);
-	printf("%d\n",temp.prise);
+	printf("Enter the genre of book : ");
+	scanf(" %[^\n]s ",temp.genre);
 
         printf("Enter the author of book : ");
         scanf(" %[^\n]s ",temp.author);
-	printf("%s\n",temp.author);
+
+	printf("Enter total pages of book : ");
+	scanf("%d",&temp.total_pages);
+	
+	printf("Enter price of book : ");
+	scanf("%d",&temp.price);
 
         printf("How many copie you have ?  : ");
         scanf("%d",&temp.copy);
-	printf("%d\n",temp.copy);
 	
-	fprintf(fp," Name : %s \n prise : %d \n Author : %s\n Copies available : %d \n",temp.name,temp.prise,temp.author,temp.copy);
-	fprintf(fp,"\n\n------------------------------------------------\n\n");
 
-	fclose(fp);
-    menu();
+	sys=popen("date +%d-%m-%Y%l-%M","r");
+	fgets( temp.issue_date, sizeof(temp.issue_date), sys);
+
+	fprintf(fp," Name : %s \n Genre : %s\n Author : %s\n Issue date : %s Total pages : %d\n Shelf No. : %d\n Price : %d\n Copies available : %d \n",temp.name,temp.genre,temp.author,temp.issue_date,temp.total_pages,000,temp.price,temp.copy);
+	fprintf(fp,"------------------------------------------------\n");
+
+	fclose(fp);	
+
+	menu();
 }
 
 
