@@ -1,10 +1,54 @@
 ------------------------------------------------
 
- Book No. 0
- Name : jigar book 1 
- prise : 234 
- Author : jigar maheshwari
- Copies available : 43 
+ Book No. 1
+ Name : hello 1 
+ prise : 12 
+ Author : hii1
+ Copies available : 3 
+
+
+------------------------------------------------
+
+------------------------------------------------
+
+ Book No. 2
+ Name : hello 2 
+ prise : 13 
+ Author : hii 2
+ Copies available : 4 
+
+
+------------------------------------------------
+
+------------------------------------------------
+
+ Book No. 3
+ Name : gesff 
+ prise : 324 
+ Author : gdsc
+ Copies available : 5 
+
+
+------------------------------------------------
+
+------------------------------------------------
+
+ Book No. 4
+ Name : new book my 
+ prise : 345 
+ Author : hrllo
+ Copies available : 5 
+
+
+------------------------------------------------
+
+------------------------------------------------
+
+ Book No. 5
+ Name : fseefv 
+ prise : 343 
+ Author : vdfds
+ Copies available : 54 
 
 
 ------------------------------------------------

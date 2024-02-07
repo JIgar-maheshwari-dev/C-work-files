@@ -2,16 +2,25 @@
 #include"struct.h"
 
 
-
 void add_book(){
 
-	FILE* fp;
+	FILE* fp,*b_count;
 	static int count;
-	fp=fopen("/home/jigar/Downloads/training/jigar_maheshwari_idp/mega/book_files/book_records.txt","a");
+  
+
+	fp=fopen("/home/jigar/intenship/C-work-files/mega/book_files/book_records.txt","a");
+    
+    b_count=fopen("/home/jigar/intenship/C-work-files/mega/book_files/count.txt","r");
+    count=getw(b_count);
+    fclose(b_count);
 
 	book temp;
 	fprintf(fp,"------------------------------------------------\n\n");
-	fprintf(fp," Book No. %d\n",count++);
+	fprintf(fp," Book No. %d\n",++count);
+    
+    b_count=fopen("/home/jigar/intenship/C-work-files/mega/book_files/count.txt","w");
+    putw(count,b_count);
+    fclose(b_count);
 
 	printf("Enter the name of book : ");
 	scanf(" %[^\n]s ",temp.name);
@@ -33,6 +42,7 @@ void add_book(){
 	fprintf(fp,"\n\n------------------------------------------------\n\n");
 
 	fclose(fp);
+    menu();
 }
 
 
