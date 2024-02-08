@@ -1,9 +1,10 @@
 #include <stdio.h>
 int main()
 {
-   char str[20];
-   gets(str);
-   printf("%s", str);
-   return 0;
+	FILE *fp;
+	fp = popen("date +%d-%m-%Y%l-%M","r");
+	char out[100];
+	fgets(out,sizeof(out),fp);
+	printf("%s",out);
 }
 

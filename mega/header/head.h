@@ -6,7 +6,7 @@ void pl();
 void menu();
 void print_book();
 void add_book();
-
+void make_struct();
 
 
 

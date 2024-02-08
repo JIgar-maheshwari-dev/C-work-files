@@ -1,55 +1,22 @@
-------------------------------------------------
-
- Book No. 1
- Name : hello 1 
- prise : 12 
- Author : hii1
+---------------------------------------------------
+ Book no  : 5 
+ Name : book no 1 
+ Genre : horror
+ Author : jigar maheshwari
+ Issue date : 07-02-2024 5-56
+ Total pages : 123
+ Shelf No. : 0
+ Price : 12
  Copies available : 3 
-
-
 ------------------------------------------------
-
+---------------------------------------------------
+ Book no  : 6 
+ Name : book 2 
+ Genre : rom com
+ Author : jigs
+ Issue date : 07-02-2024 5-57
+ Total pages : 45
+ Shelf No. : 0
+ Price : 999
+ Copies available : 1 
 ------------------------------------------------
-
- Book No. 2
- Name : hello 2 
- prise : 13 
- Author : hii 2
- Copies available : 4 
-
-
-------------------------------------------------
-
-------------------------------------------------
-
- Book No. 3
- Name : gesff 
- prise : 324 
- Author : gdsc
- Copies available : 5 
-
-
-------------------------------------------------
-
-------------------------------------------------
-
- Book No. 4
- Name : new book my 
- prise : 345 
- Author : hrllo
- Copies available : 5 
-
-
-------------------------------------------------
-
-------------------------------------------------
-
- Book No. 5
- Name : fseefv 
- prise : 343 
- Author : vdfds
- Copies available : 54 
-
-
-------------------------------------------------
-
