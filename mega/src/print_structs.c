@@ -1,6 +1,7 @@
 #include"head.h"
 #include"struct.h"
 
+
 void print_struct(book *ptr){
 	
 	printf("\n  NAME       =   %s\n",ptr->name);

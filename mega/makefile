@@ -43,5 +43,6 @@ create_dirs:
 	@mkdir -p $(CURDIR)/$(SRC_DIR) $(CURDIR)/$(OBJ_DIR) $(CURDIR)/$(OUT_DIR)
 
 
-cb:
-	rm book_files/book_records.txt
+reset:
+	-rm book_files/book_records.txt
+	echo -1 > ./book_files/count.txt

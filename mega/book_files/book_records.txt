@@ -1,44 +1,22 @@
 ------------------------------------------------
- Book no  : 0 
- Name : book 1 
- Genre : qqq
- Author : aaa
- Issue date : 08-02-2024- 2-50
- Total pages : 111
- Shelf No. : 0
- Price : 111
- Copies available : 1 
-------------------------------------------------
-------------------------------------------------
  Book no  : 1 
- Name : bbb 
- Genre : bbb
- Author : bbb
- Issue date : 08-02-2024- 2-50
- Total pages : 222
- Shelf No. : 0
- Price : 222
- Copies available : 2 
-------------------------------------------------
-------------------------------------------------
- Book no  : 2 
- Name : ccc 
- Genre : ccc
- Author : ccc
- Issue date : 08-02-2024- 2-50
+ Name : book 1 
+ Genre : dfg
+ Author : dfg
+ Issue date : 09-02-2024- 5-54
  Total pages : 123
  Shelf No. : 0
- Price : 333
+ Price : 123
  Copies available : 3 
 ------------------------------------------------
 ------------------------------------------------
- Book no  : 3 
- Name : ddd 
- Genre : ddd
- Author : ddd
- Issue date : 08-02-2024- 2-51
- Total pages : 444
+ Book no  : 2 
+ Name : book 2 
+ Genre : bdfsdf
+ Author : fgdfg
+ Issue date : 09-02-2024- 5-59
+ Total pages : 123
  Shelf No. : 0
- Price : 444
- Copies available : 4 
+ Price : 123
+ Copies available : 123 
 ------------------------------------------------

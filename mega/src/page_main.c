@@ -7,8 +7,9 @@ void menu(){
         printf("                                            2. Add new copy of book                          \n");
         printf("                                            3. Print details of book                          \n");
         printf("                                            4. Exit                          \n");
-	int a;
-	scanf("%d",&a);
+		int a;
+		scanf("%d",&a);
+	
 	
 	switch(a)
 	{

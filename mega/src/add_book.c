@@ -1,37 +1,54 @@
 #include"head.h"
 #include"struct.h"
 
-
 void add_book(){
 
 	
 	FILE *fp, *c,*sys;
 	static int count;
 
-	fp=fopen("../book_files/book_records.txt","a");
+	fp=fopen("/home/jigar/Downloads/training/jigar_maheshwari_idp/mega/book_files/book_records.txt","a");
 
-
-	c=fopen("../book_files/count.txt","r");
-	count=getw(c);
-	fclose(c);
 
 	book temp;
-	
-	fprintf(fp,"------------------------------------------------\n");
-	fprintf(fp," Book no  : %d \n",++count);
-
-	c=fopen("../book_files/count.txt","w");
-	putw(count,c);
-	fclose(c);
 
 	printf("Enter the name of book : ");
-	scanf(" %[^\n]s ",temp.name);
+	
+	char t=getchar();
+	gets(temp.name);
+	
+	
+	
+
+	count=get_book_count();
+	if(count!=-1){
+		check_book(temp.name,count);
+	}
+
+	if(count==-1){
+		count++;
+	}
+
+	write_count(++count);
+	
+	temp.book_no=count;
+
+	fprintf(fp,"------------------------------------------------\n");
+	fprintf(fp," Book no  : %d \n",count);
+
+	
+/*
+	c=fopen("/home/jigar/Downloads/training/jigar_maheshwari_idp/mega/book_files/count.txt","w");
+	putw(count,c);
+	fclose(c);
+*/
+	
 	
 	printf("Enter the genre of book : ");
-	scanf(" %[^\n]s ",temp.genre);
+	gets(temp.genre);
 
         printf("Enter the author of book : ");
-        scanf(" %[^\n]s ",temp.author);
+	gets(temp.author);
 
 	printf("Enter total pages of book : ");
 	scanf("%d",&temp.total_pages);
@@ -50,6 +67,7 @@ void add_book(){
 	fprintf(fp,"------------------------------------------------\n");
 
 	fclose(fp);	
+
 
 	menu();
 }

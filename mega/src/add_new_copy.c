@@ -1,6 +1,8 @@
 #include"head.h"
 #include"struct.h"
 
+
+
 void new_copy(){
 	
 	char temp[256],command[1024];
@@ -8,14 +10,15 @@ void new_copy(){
 	FILE *fp;
 	
 	printf("Enter the book name  :  ");	
-	scanf(" %[^\n]s ",temp);	
+	char c = getchar();
+	gets(temp);
 
 /*
 	if (temp[strlen(temp) - 1] == '\n') {
 		temp[strlen(temp) - 1] = '\0';
 	}
 		
-	snprintf(command, sizeof(command), "grep -n \"%s\" ../book_files/book_records.txt | cut -d: -f1", temp);
+	snprintf(command, sizeof(command), "grep -n \"%s\" ./home/jigar/Downloads/training/jigar_maheshwari_idp/mega/book_files/book_records.txt | cut -d: -f1", temp);
 
 	fp = popen(command, "r");
 	fgets(temp,sizeof(temp),fp);
@@ -38,14 +41,24 @@ void new_copy(){
 	
 
 	book* found_book = find_book_by_name(temp1 ,temp);
+
+
 	
-	printf("FOUND BOOK NAME IN OLD FUNc    = %s \n",found_book->name);
-	printf("ptr in main %ld",ptr);
 
-	printf("found ptr in main  %ld",found_book);
-	printf("NULL = %d",NULL);
 
-	print_struct(found_book);
+
+
+
+
+
+
+//	printf("name   =   %s   \n\n",found_book->name);
+
+//	printf("ptr in main %ld",ptr);
+
+//	printf("found ptr in main  %ld",found_book);
+
+//	print_struct(found_book);
 /*
 	if(found_book==0){
 		printf("BOOK NOT FOUND \n");
@@ -55,4 +68,5 @@ void new_copy(){
 	}
 
 */
+
 }
