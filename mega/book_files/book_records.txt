@@ -1,22 +1,44 @@
----------------------------------------------------
- Book no  : 5 
- Name : book no 1 
- Genre : horror
- Author : jigar maheshwari
- Issue date : 07-02-2024 5-56
+------------------------------------------------
+ Book no  : 0 
+ Name : book 1 
+ Genre : qqq
+ Author : aaa
+ Issue date : 08-02-2024- 2-50
+ Total pages : 111
+ Shelf No. : 0
+ Price : 111
+ Copies available : 1 
+------------------------------------------------
+------------------------------------------------
+ Book no  : 1 
+ Name : bbb 
+ Genre : bbb
+ Author : bbb
+ Issue date : 08-02-2024- 2-50
+ Total pages : 222
+ Shelf No. : 0
+ Price : 222
+ Copies available : 2 
+------------------------------------------------
+------------------------------------------------
+ Book no  : 2 
+ Name : ccc 
+ Genre : ccc
+ Author : ccc
+ Issue date : 08-02-2024- 2-50
  Total pages : 123
  Shelf No. : 0
- Price : 12
+ Price : 333
  Copies available : 3 
 ------------------------------------------------
----------------------------------------------------
- Book no  : 6 
- Name : book 2 
- Genre : rom com
- Author : jigs
- Issue date : 07-02-2024 5-57
- Total pages : 45
+------------------------------------------------
+ Book no  : 3 
+ Name : ddd 
+ Genre : ddd
+ Author : ddd
+ Issue date : 08-02-2024- 2-51
+ Total pages : 444
  Shelf No. : 0
- Price : 999
- Copies available : 1 
+ Price : 444
+ Copies available : 4 
 ------------------------------------------------

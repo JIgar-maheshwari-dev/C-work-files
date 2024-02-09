@@ -1,0 +1,13 @@
+Fiction
+Novel
+Science fiction
+Mystery
+Historical fiction
+Horror
+Humor
+Essay
+Romance
+Spirituality
+Drama
+Crime fiction
+Politics

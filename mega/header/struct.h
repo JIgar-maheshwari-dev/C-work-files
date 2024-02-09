@@ -12,4 +12,3 @@ struct book{
 };
 
 typedef struct book book;
-typedef struct book* b_ptr;
