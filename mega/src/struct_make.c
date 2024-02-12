@@ -6,6 +6,10 @@ book *get_structs()
 
 	FILE *fp;
 	fp = fopen("/home/jigar/Downloads/training/jigar_maheshwari_idp/mega/book_files/book_records.txt", "r");
+	if(fp==NULL){
+		printf("Error in opening file\n");
+        return NULL;
+	}
 
 	char namee[50], genr[50], auth[50], idate[20];
 	int bn, page, sn, pricee, avail, n;
@@ -37,7 +41,9 @@ book *get_structs()
 		strcpy(p1->name, namee);
 		strcpy(p1->genre, genr);
 		strcpy(p1->author, auth);
-		strcpy(p1->issue_date, idate);
+		strcpy(p1->date_IN, idate);
+
+
 
 		p1->book_no = bn;
 		p1->total_pages = page;

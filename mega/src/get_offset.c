@@ -1,10 +1,10 @@
 #include "head.h"
 #include "struct.h"
 
-int get_offset(char pattern[])
+int get_offset(FILE *f,char pattern[])
 {
 
-	FILE *f = fopen(file, "r");
+
 	if (f == NULL)
 	{
 		printf("file open error\n");

@@ -44,5 +44,6 @@ create_dirs:
 
 
 reset:
-	-rm book_files/book_records.txt
-	echo -1 > ./book_files/count.txt
+	-rm book_files/book_records.txt book_files/issued_books.txt
+	-touch book_files/book_records.txt book_files/issued_books.txt
+	-echo -1 > ./book_files/count.txt

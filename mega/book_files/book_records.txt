@@ -1,22 +1,22 @@
 ------------------------------------------------
  Book no  : 1 
  Name : book 1 
- Genre : dfg
- Author : dfg
- Issue date : 09-02-2024- 5-54
- Total pages : 123
+ Genre : sf
+ Author : sdf
+ Date IN : 12-02-2024- 6-17
+ Total pages : 234
  Shelf No. : 0
- Price : 123
- Copies available : 3 
+ Price : 4
+ Copies available : 4 
 ------------------------------------------------
 ------------------------------------------------
  Book no  : 2 
  Name : book 2 
- Genre : bdfsdf
- Author : fgdfg
- Issue date : 09-02-2024- 5-59
- Total pages : 123
+ Genre : sdf
+ Author : sdf
+ Date IN : 12-02-2024- 6-17
+ Total pages : 45
  Shelf No. : 0
- Price : 123
- Copies available : 123 
+ Price : 54
+ Copies available : 5 
 ------------------------------------------------

@@ -40,6 +40,8 @@ void modify()
 	printf("new available copies ?  : ");
 	scanf("%d", &found_book->copy);
 
-	write_struct(found_book);
+	write_struct(found_book,0);
+	printf("Enter any key to continue ...");
+	getchar();
 	menu();
 }

@@ -1,9 +1,10 @@
 
-struct book{
+struct book
+{
 	char name[50];
 	char genre[50];
 	char author[100];
-	char issue_date[20];
+	char date_IN[20];
 
 	int book_no;
 	int total_pages;
