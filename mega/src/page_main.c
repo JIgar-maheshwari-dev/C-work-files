@@ -4,9 +4,11 @@ void menu(){
         pl();
         printf("                                                 WELCOME TO LIBRARY OF JIGAR MAHESHWARI                    \n\n");
         printf("                                            1. Enter new book                          \n");
-        printf("                                            2. Add new copy of book                          \n");
+        printf("                                            2. Modify book details                         \n");
         printf("                                            3. Print details of book                          \n");
-        printf("                                            4. Exit                          \n");
+        printf("                                            4. Issue a book                          \n");
+        printf("                                            5. Exit                          \n");
+
 		int a;
 		scanf("%d",&a);
 	
@@ -18,13 +20,17 @@ void menu(){
 			break;
 		
 		case 2:
-			new_copy();
+			modify();
 			break;
 
 		case 3:
 			print_book();
 			break;
+		
 		case 4:
+			issue_book();
+		
+		case 5:
 			exit(0);
 	}
 }

@@ -4,23 +4,26 @@
 void print_book(){
 
 	FILE *fp;
+
 	fp=fopen("/home/jigar/Downloads/training/jigar_maheshwari_idp/mega/book_files/book_records.txt","r");
 	if(fp == NULL){
 		printf("UNABLE TO OPEN THE FILE \n");
-		exit(0);
+		printf("PRESS Enter TO GO TO MAIN MENU \n ");
+		getchar();
+		getchar();
+		menu();
 	}
 	
-	int bn;
-	char namee[50],genr[50],auth[50],idate[20];
-	int i=0,page,sn,pricee,avail;
+	char genr[50];
 
 	while(!(feof(fp))){
 		fgets(genr,100,fp);
 		printf("%s",genr);
 	}
 	fclose(fp);
-	printf("going to main menu .......\n");
-	system("sleep 4");
+	printf("PRESS Enter TO GO TO MAIN MENU  .......\n");
+	getchar();
+	getchar();
 	menu();
 }
 
