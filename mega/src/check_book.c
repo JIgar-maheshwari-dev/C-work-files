@@ -7,7 +7,7 @@ void check_book(char *name,int n){
     book *ptr;
     ptr=get_structs();
 
- //  printf("inside check book function \n\n\n");
+   printf("inside check book function \n\n\n");
 
     for(int i=0;i<n;i++){
 

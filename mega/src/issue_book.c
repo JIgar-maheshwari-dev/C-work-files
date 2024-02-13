@@ -36,6 +36,9 @@ void issue_book(){
 	fprintf(fp,"------------------------------------\n");
 
 	fclose(fp);
+
+	write_struct(ptr1,1);
+
 	system("sleep 2");
 	menu();
 }

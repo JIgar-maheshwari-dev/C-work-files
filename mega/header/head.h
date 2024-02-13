@@ -37,6 +37,6 @@ char *termi(char *str);
 
 void check_book(char *, int);
 
-void write_struct(book *ptr);
+void write_struct(book *ptr,int n);
 
 int get_offset(FILE *fp,char pattern[]);

@@ -11,19 +11,19 @@ void write_struct(book *ptr,int n)
     //  printf("book no. = %d\n", ptr->book_no);
 
     char pattern[20] = " Book no  : ";
-    char n[50];
+    char str[50];
 
-    sprintf(n, "%s%d", pattern, ptr->book_no);
+    sprintf(str, "%s%d", pattern, ptr->book_no);
 
     fp = fopen(file, "rw+");
-    int offset = get_offset(fp,n);
+    int offset = get_offset(fp,str);
 
     fseek(fp, offset, 0);
     if(n==0)
-        fprintf(fp, " Name : %s \n Genre : %s\n Author : %s\n Date IN : %s Total pages : %d\n Shelf No. : %d\n Price : %d\n Copies available : %d \n", ptr->name, ptr->genre, ptr->author, ptr->date_IN, ptr->total_pages, 000, ptr->price, ptr->copy);
+        fprintf(fp, " Name : %s \n Genre : %s\n Author : %s\n Date IN : %s\n Total pages : %d\n Shelf No. : %d\n Price : %d\n Copies available : %d \n", ptr->name, ptr->genre, ptr->author, ptr->date_IN, ptr->total_pages, 000, ptr->price, ptr->copy);
 
     if(n==1)
-        fprintf(fp, " Name : %s \n Genre : %s\n Author : %s\n Date IN : %s Total pages : %d\n Shelf No. : %d\n Price : %d\n Copies available : %d \n", ptr->name, ptr->genre, ptr->author, ptr->date_IN, ptr->total_pages, 000, ptr->price, --(ptr->copy));
+        fprintf(fp, " Name : %s \n Genre : %s\n Author : %s\n Date IN : %s\n Total pages : %d\n Shelf No. : %d\n Price : %d\n Copies available : %d \n", ptr->name, ptr->genre, ptr->author, ptr->date_IN, ptr->total_pages, 000, ptr->price, --(ptr->copy));
 
     fclose(fp);
 
