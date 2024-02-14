@@ -7,7 +7,8 @@ void menu(){
         printf("                                            2. Modify book details                         \n");
         printf("                                            3. Print details of book                          \n");
         printf("                                            4. Issue a book                          \n");
-        printf("                                            5. Exit                          \n");
+        printf("                                            5. Remove a book                          \n");
+	    printf("                                            6. Exit                          \n");
 
 		int a;
 		scanf("%d",&a);
@@ -29,8 +30,11 @@ void menu(){
 		
 		case 4:
 			issue_book();
-		
+			break;
 		case 5:
+			delete();
+		
+		case 6:
 			exit(0);
 	}
 }

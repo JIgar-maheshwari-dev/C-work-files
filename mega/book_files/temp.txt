@@ -1,45 +1,34 @@
 ------------------------------------------------
  Book no  : 1 
  Name : book 1 
- Genre : fiction
- Author : jigar maheshwari 
- Date IN : 14-02-2024- 4-39
- Total pages : 500
+ Genre : sdf
+ Author : sdf
+ Date IN : 14-02-2024- 6-25
+ Total pages : 353
  Shelf No. : 0
- Price : 499
- Copies available : 1 
+ Price : 3
+ Copies available : 33 
 ------------------------------------------------
 ------------------------------------------------
  Book no  : 2 
  Name : book 2 
- Genre : mystery
- Author : het raval
- Date IN : 14-02-2024- 4-40
- Total pages : 900
+ Genre : d
+ Author : d
+ Date IN : 14-02-2024- 6-25
+ Total pages : -1005408320
  Shelf No. : 0
- Price : 599
- Copies available : 4 
+ Price : 89315952
+ Copies available : 32767 
 ------------------------------------------------
 ------------------------------------------------
  Book no  : 3 
  Name : book 3 
- Genre : sci-fi
- Author : kevin papervala
- Date IN : 14-02-2024- 4-40
- Total pages : 800
+ Genre : sdfs
+ Author : sdfsd
+ Date IN : 14-02-2024- 6-26
+ Total pages : 34
  Shelf No. : 0
- Price : 399
- Copies available : 4 
-------------------------------------------------
-------------------------------------------------
- Book no  : 4 
- Name : book 4 
- Genre : revant koriya
- Author : revant koriya
- Date IN : 14-02-2024- 4-40
- Total pages : 600
- Shelf No. : 0
- Price : 299
- Copies available : 6 
+ Price : 234
+ Copies available : 3 
 ------------------------------------------------
 ------------------------------------------------

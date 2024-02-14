@@ -26,7 +26,7 @@ int get_lines();
 
 void write_struct_2(book *ptr,int n);
 
-
+void delete();
 
 void write_count(int n);
 

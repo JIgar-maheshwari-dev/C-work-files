@@ -119,7 +119,7 @@ void write_struct(book *sptr)
 		fputs(str, temp);
 	}
 
-	printf("copied file to temp \n");
+//	printf("copied file to temp \n");
 	fclose(fp);
 	fclose(temp);
 
@@ -135,7 +135,7 @@ void write_struct(book *sptr)
 		if (current_line < n1)
 		{
 			fgets(str, sizeof(str), temp);
-			printf("\n  %d   %s \n", current_line, str);
+		//	printf("\n  %d   %s \n", current_line, str);
 			fputs(str, fp);
 		}
 
@@ -181,6 +181,6 @@ int get_lines()
 	}
 
 	fclose(fp);
-	printf("LINES ===== %d \n", count);
+//	printf("LINES ===== %d \n", count);
 	return count;
 }
