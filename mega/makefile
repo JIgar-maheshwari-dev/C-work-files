@@ -47,3 +47,7 @@ reset:
 	-rm book_files/book_records.txt book_files/issued_books.txt
 	-touch book_files/book_records.txt book_files/issued_books.txt
 	-echo -1 > ./book_files/count.txt
+
+add:
+	cat book_files/test_records.txt | cat > book_files/book_records.txt
+	-echo 3 > ./book_files/count.txt

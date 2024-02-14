@@ -3,7 +3,7 @@
 
 char file[] = "/home/jigar/Downloads/training/jigar_maheshwari_idp/mega/book_files/book_records.txt";
 
-void write_struct(book *ptr,int n)
+void write_struct_2(book *ptr,int n)
 {
     FILE *fp;
     //  fp=fopen(file,"a");

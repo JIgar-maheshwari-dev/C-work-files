@@ -37,7 +37,7 @@ void issue_book(){
 
 	fclose(fp);
 
-	write_struct(ptr1,1);
+	write_struct_2(ptr1,1);
 
 	system("sleep 2");
 	menu();

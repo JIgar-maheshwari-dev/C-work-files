@@ -21,6 +21,11 @@ void modify();
 
 void issue_book();
 
+int get_lines();
+
+
+void write_struct_2(book *ptr,int n);
+
 
 
 void write_count(int n);
@@ -37,6 +42,7 @@ char *termi(char *str);
 
 void check_book(char *, int);
 
-void write_struct(book *ptr,int n);
+void write_struct(book *ptr);
+
 
 int get_offset(FILE *fp,char pattern[]);
