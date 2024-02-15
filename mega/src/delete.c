@@ -3,12 +3,13 @@
 
 extern char file[];
 
-void delete(){
+void delete()
+{
 
-    char temp[256];
+	char temp[256];
 
 	printf("Enter the book name  you want  :   ");
-    getchar();
+	getchar();
 	gets(temp);
 
 	book *temp1 = get_structs();
@@ -26,9 +27,6 @@ void delete(){
 	printf("Enter any key to continue ...");
 	getchar();
 	menu();
-
-
-    
 }
 
 void del_struct(book *sptr)
@@ -60,60 +58,78 @@ void del_struct(book *sptr)
 	int current_line = 1;
 	char str[100];
 
-	while (!feof(fp))
+
+	int lines = get_lines();
+
+	while (current_line<=lines)
 	{
 		fgets(str, sizeof(str), fp);
 		fputs(str, temp);
+		current_line++;
 	}
 
-	printf("copied file to temp \n");
+	// printf("copied file to temp \n");
 	fclose(fp);
 	fclose(temp);
 
 	temp = fopen("/home/jigar/Downloads/training/jigar_maheshwari_idp/mega/book_files/temp.txt", "r");
-	
+
 	char array[100];
 
-	int lines = get_lines();
 
 	fp = fopen(file, "w");
 
-	while (current_line < lines)
+	printf("total lines = %d\n", lines);
+	
+	current_line = 1;
+
+	while (current_line <= lines)
 	{
+
+		printf("current line  = %d \n", current_line);
 
 		if (current_line < n1)
 		{
 			fgets(str, sizeof(str), temp);
-			//printf("  %d   %s ", current_line, str);
+			printf(" <= n1  %d   %s ", current_line, str);
 			fputs(str, fp);
+
 		}
-		if(current_line == n1){
-			current_line += 9;
+
+		if (current_line == n1)
+		{
+			current_line += 11;
+			fprintf(fp, " Book no  : %d \n", sptr->book_no++);
+
 			for (int i = 0; i < 11; i++)
 				fgets(str, sizeof(str), temp);
 		}
 
-		if (current_line >= n2)
+		if (current_line > n2)
 		{
-			fgets(str, sizeof(str), temp);
-			printf("  %d   %s ", current_line, str);
-			fputs(str, fp);
-
-			fprintf(fp, " Book no  : %d \n", (sptr->book_no)++);
 
 			fgets(str, sizeof(str), temp);
-			printf("\n  %d   %s \n", current_line, str);
 			fputs(str, fp);
+			
+			printf(" > n2 %d   %s ", current_line, str);
+
+			
+
+
+			if(current_line%11 == 2){
+
+			}
+		
+
 		}
 
 		current_line++;
+
 	}
 
 	fclose(fp);
 	fclose(temp);
-	int n=get_book_count();
-	write_count(n-1);
+	int n = get_book_count();
+	write_count(n - 1);
 	printf("Book is removed from library succesfully \n ");
 }
-
-

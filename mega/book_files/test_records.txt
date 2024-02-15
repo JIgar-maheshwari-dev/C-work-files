@@ -1,33 +1,33 @@
 ------------------------------------------------
  Book no  : 1 
  Name : book 1 
- Genre : jigar 1
- Author : jigar 1
- Date IN : 14-02-2024-10-25
- Total pages : 123
+ Genre : sdf
+ Author : sdf
+ Date IN : 15-02-2024- 4-25
+ Total pages : 3245
  Shelf No. : 0
- Price : 123
- Copies available : 1 
+ Price : 234
+ Copies available : 3 
 ------------------------------------------------
 ------------------------------------------------
  Book no  : 2 
  Name : book 2 
- Genre : fiction
- Author : jigar 2
- Date IN : 14-02-2024-10-25
- Total pages : 123
+ Genre : sdf
+ Author : sdf
+ Date IN : 15-02-2024- 4-25
+ Total pages : 234
  Shelf No. : 0
- Price : 123
+ Price : 234
  Copies available : 3 
 ------------------------------------------------
 ------------------------------------------------
  Book no  : 3 
  Name : book 3 
- Genre : sdf sdf
- Author : jigar 3
- Date IN : 14-02-2024-10-29
- Total pages : 234
+ Genre : sdf
+ Author : sdf
+ Date IN : 15-02-2024- 4-25
+ Total pages : 244
  Shelf No. : 0
  Price : 234
- Copies available : 4 
+ Copies available : 3 
 ------------------------------------------------

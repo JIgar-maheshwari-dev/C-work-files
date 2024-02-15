@@ -50,4 +50,5 @@ reset:
 
 add:
 	cat book_files/test_records.txt | cat > book_files/book_records.txt
+	cat book_files/test_count.txt | cat > book_files/count.txt
 	-echo 3 > ./book_files/count.txt

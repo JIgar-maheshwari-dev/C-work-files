@@ -30,23 +30,23 @@ void modify()
 	gets(temp);
 	if (strcmp(temp, "!"))
 	{
-		strcat(found_book->name, "");
-		strcat(found_book->name, temp);
+		//strcat(found_book->name, "");
+		strcpy(found_book->name, temp);
 	}
 
 	printf("new genre : ");
 	gets(temp);
 	if (strcmp(temp, "!"))
 	{
-		strcat(found_book->genre, "");
-		strcat(found_book->genre, temp);
+		//strcat(found_book->genre, "");
+		strcpy(found_book->genre, temp);
 	}
 	printf("new author : ");
 	gets(temp);
 	if (strcmp(temp, "!"))
 	{
-		strcat(found_book->author, "");
-		strcat(found_book->author, temp);
+		//strcat(found_book->author, "");
+		strcpy(found_book->author, temp);
 	}
 
 	/*

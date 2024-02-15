@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 
+
 typedef struct book book;
 
 extern char file[];
@@ -22,6 +23,8 @@ void modify();
 void issue_book();
 
 int get_lines();
+
+void deposit();
 
 
 void write_struct_2(book *ptr,int n);
@@ -46,3 +49,8 @@ void write_struct(book *ptr);
 
 
 int get_offset(FILE *fp,char pattern[]);
+
+void exiit();
+
+void* func_ptr[6];
+
