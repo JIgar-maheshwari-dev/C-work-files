@@ -36,9 +36,9 @@ void del_struct(book *sptr)
 	fp = fopen(file, "r");
 
 	int n1 = ((sptr->book_no) - 1) * 11 + 1;
-	printf("\n\n n1 = %d\n\n", n1);
+	printf("\n n1 = %d\n", n1);
 	int n2 = ((sptr->book_no) - 1) * 11 + 2 + 9;
-	printf("\n\n n2 = %d\n\n", n2);
+	printf("\nn2 = %d\n", n2);
 
 	if (fp == NULL)
 	{
@@ -58,10 +58,9 @@ void del_struct(book *sptr)
 	int current_line = 1;
 	char str[100];
 
-
 	int lines = get_lines();
 
-	while (current_line<=lines)
+	while (current_line <= lines)
 	{
 		fgets(str, sizeof(str), fp);
 		fputs(str, temp);
@@ -76,60 +75,67 @@ void del_struct(book *sptr)
 
 	char array[100];
 
-
 	fp = fopen(file, "w");
 
 	printf("total lines = %d\n", lines);
-	
+
 	current_line = 1;
 
 	while (current_line <= lines)
 	{
+			if(current_line < n1){
 
-		printf("current line  = %d \n", current_line);
+				fgets(array, sizeof(array), temp);
+                fputs(array, fp);
+			//	printf("current_line = %d\t%s\n", current_line,array);
+			}
 
-		if (current_line < n1)
-		{
-			fgets(str, sizeof(str), temp);
-			printf(" <= n1  %d   %s ", current_line, str);
-			fputs(str, fp);
+			else if(current_line >= n1 && current_line <= n2){
+				
+				
+				{
+                	fgets(array, sizeof(array), temp);
 
-		}
+				//	printf("<< >=n1 && <= n2 else past >>  current_line = %d\t%s  \n <<< don't take it >>> ", current_line,array);
 
-		if (current_line == n1)
-		{
-			current_line += 11;
-			fprintf(fp, " Book no  : %d \n", sptr->book_no++);
-
-			for (int i = 0; i < 11; i++)
-				fgets(str, sizeof(str), temp);
-		}
-
-		if (current_line > n2)
-		{
-
-			fgets(str, sizeof(str), temp);
-			fputs(str, fp);
-			
-			printf(" > n2 %d   %s ", current_line, str);
-
-			
-
-
-			if(current_line%11 == 2){
+				}
 
 			}
-		
+			else if(current_line > n2){
 
-		}
+				if(current_line%11 == 2){
+					fgets(array, sizeof(array), temp);
+				//	fgets(array, sizeof(array), temp);
+					
+				//	current_line++;
+					fprintf(fp, " Book no  : %d \n", sptr->book_no++);
 
-		current_line++;
+                //   	fprintf(fp, " here add new \n");
+                    //fgets(array, sizeof(array), temp);
+				}
 
+				else {
+
+					fgets(array, sizeof(array), temp);
+					//printf("<<   >n2    >> current_line = %d\t%s\n", current_line,array);
+
+					fputs(array, fp);
+				}
+
+            }
+			// printf("current_line = %d\n", current_line);
+			current_line++;
 	}
+
+	printf("current line  = %d \n", current_line);
+
 
 	fclose(fp);
 	fclose(temp);
 	int n = get_book_count();
 	write_count(n - 1);
+	if(n-1 == 0)
+		write_count(-1);
+
 	printf("Book is removed from library succesfully \n ");
 }

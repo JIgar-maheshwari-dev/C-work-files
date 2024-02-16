@@ -47,10 +47,11 @@ void check_book(char *, int);
 
 void write_struct(book *ptr);
 
-
 int get_offset(FILE *fp,char pattern[]);
 
 void exiit();
 
-void* func_ptr[6];
+void del_struct(book *sptr);
+
+void* func_ptr[7];
 

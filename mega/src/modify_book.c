@@ -171,10 +171,11 @@ int get_lines()
 	if (fp == NULL)
 		printf("Error: Could not open\n");
 	int count = 0;
+	
 	char c;
 	while (!(feof(fp)))
 	{
-		char c = getc(fp);
+		c = getc(fp);
 		//	printf("%c",c);
 		if (c == '\n')
 			count++;

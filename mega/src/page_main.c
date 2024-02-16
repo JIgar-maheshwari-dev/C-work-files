@@ -1,7 +1,7 @@
 #include"head.h"
 
 
-void* func_ptr[6]= { add_book,modify,print_book,issue_book,deposit,delete,exiit};
+void* func_ptr[7]= { add_book,modify,print_book,issue_book,deposit,delete,exiit};
 
 
 void menu(){

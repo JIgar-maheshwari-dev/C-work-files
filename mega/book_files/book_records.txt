@@ -3,18 +3,18 @@
  Name : book 1 
  Genre : sdf
  Author : sdf
- Date IN : 15-02-2024- 6-24
+ Date IN : 16-02-2024- 4-16
  Total pages : 234
  Shelf No. : 0
  Price : 234
- Copies available : 3 
+ Copies available : 4 
 ------------------------------------------------
 ------------------------------------------------
  Book no  : 2 
  Name : book 2 
  Genre : sdf
  Author : sdf
- Date IN : 15-02-2024- 6-24
+ Date IN : 16-02-2024- 4-16
  Total pages : 234
  Shelf No. : 0
  Price : 234
@@ -25,31 +25,9 @@
  Name : book 3 
  Genre : sdf
  Author : sdf
- Date IN : 15-02-2024- 6-24
+ Date IN : 16-02-2024- 4-16
  Total pages : 234
  Shelf No. : 0
  Price : 234
- Copies available : 3 
-------------------------------------------------
-------------------------------------------------
- Book no  : 4 
- Name : book 4 
- Genre : sdf
- Author : sdf
- Date IN : 15-02-2024- 6-25
- Total pages : 234
- Shelf No. : 0
- Price : 234
- Copies available : 3 
-------------------------------------------------
-------------------------------------------------
- Book no  : 5 
- Name : book 5 
- Genre : sdf
- Author : sdf
- Date IN : 15-02-2024- 6-25
- Total pages : 234
- Shelf No. : 0
- Price : 234
- Copies available : 3 
+ Copies available : 4 
 ------------------------------------------------
